@@ -1,6 +1,6 @@
 # vottun_nft_validator
 Python script to verify the owner of an NFT using Vottun APIs.
-Folow these instruction if you want to use this python script to verify the owner of an NFT using Vottun APIs.
+Folow these instructions if you want to use this python script to verify the owner of an NFT using Vottun APIs.
 
 1) Go to https://vottun.com/ to sign up, and follow the process to get your API key and your project id. 
 2) Make sure you have python3 install on your system.
@@ -13,7 +13,7 @@ Folow these instruction if you want to use this python script to verify the owne
 9) Replace <NFT_ID> with the id of the NFT want to verify the owner of.
 10) Run the folling code: python3 nftvalidator.py
 
-The response will look this: 
+The response will look like this: 
 
 {
     "owner": "0x8c437496d4b31..4cd47863732165a3"
