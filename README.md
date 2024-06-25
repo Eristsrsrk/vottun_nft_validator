@@ -1,7 +1,7 @@
-Folow these instruction if you want to verify if an address is the owner of an NFT using Vottun APIs.
+Folow these instruction if you want to verify if an address is the owner of an NFT using Vottun APIs:
 
 1) Go to https://vottun.com/ to sign up, and follow the process to get your API key and your project id. 
-2) Make sure you have python3 installed on your system.
+2) Make sure you have python3 installed in your system.
 3) Download and unzip this repository.
 4) Using the terminal of your choice, go to the location where you downloaded and unzipped this repository.
 5) Replace <YOUR_VOTTUN_API_KEY> with the API key you created in step 1.
