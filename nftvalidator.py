@@ -36,4 +36,4 @@ else:
     if address == owner_value:
         print("TRUE. This address is the owner of the NFT.")
     else:
-        print("FALSE. This addres is not the owner of the NFT.")
+        print("FALSE. This address is not the owner of the NFT.")
