@@ -1,5 +1,7 @@
 import requests
 
+address = input("Type or paste the address you want to verify: ")
+nft_id = int(input("NFT_ID: "))
 url = 'https://api.vottun.tech/erc/v1/erc721/ownerOf'
 headers = {
     "Authorization": "Bearer <YOUR_VOTTUN_API_KEY>",
@@ -10,7 +12,7 @@ headers = {
 data = {   
     "contractAddress": "<CONTRACT_ADDRESS>",
     "network": <NETWORK_ID>,
-    "id": <NFT_ID>
+    "id": nft_id
     }
 
 try:
@@ -30,9 +32,8 @@ except requests.exceptions.HTTPError as he:
 except ValueError as ve:
     print('JSON decoding error:', ve)
 else:
-    print('Request was successful')
-    print(json_data)
-
-
-
-
+    owner_value = json_data["owner"]
+    if address == owner_value:
+        print("TRUE. This address is the owner of the NFT.")
+    else:
+        print("FALSE. This addres is not the owner of the NFT.")
